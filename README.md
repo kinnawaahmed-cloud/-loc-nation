@@ -9,7 +9,7 @@
 ---
 
 ### WHO WE ARE
-We are 200 families of the indigenous fishing community of Kazinga Channel, Katwe-Kabatooro Town Council, Kasese District, Queen Elizabeth National Park, Uganda.
+We are 200 families of the indigenous fishing community of Kazinga Channel,Rubirizi District, Queen Elizabeth National Park, Uganda.
 
 Our grandfathers settled here in 1942, before the park. We are not visitors - we are natives of Kazinga.
 
