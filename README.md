@@ -56,7 +56,7 @@ Don't see Kazinga from tourist bus - Live it with us!
 
 **BOOK NOW:**
 📞 **Phone/WhatsApp: +256 755 358 436**
-📍 **Location**: Kazinga Channel, Katwe-Kabatooro, Kasese, Uganda
+📍 **Location**: Kazinga Channel,fishing village Rubirizi district Uganda
 👤 **Contact**: President Bugimbi Ahmed Kinnawa
 
 Your money goes directly to fishing families!
