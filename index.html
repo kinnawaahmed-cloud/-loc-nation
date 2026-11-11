@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kazinga Channel Fishing Village - Since 1942</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f0;color:#222}
+header{background:#0a4d2e;color:white;padding:20px;text-align:center}
+header h1{margin:0;font-size:26px}
+header p{margin:5px 0}
+img.hero{width:100%;max-height:380px;object-fit:cover}
+.box{padding:20px;max-width:800px;margin:auto;background:white}
+.price{background:#fff3cd;border:2px solid #e6a800;padding:15px;border-radius:10px;text-align:center;margin:15px 0}
+.btn{display:block;text-align:center;background:#25D366;color:white;padding:15px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:18px;margin:10px 0}
+.btn2{background:#0a4d2e}
+#chat{border:1px solid #ddd;border-radius:10px;padding:10px;margin-top:20px}
+#messages{height:260px;overflow-y:auto;background:#f9f9f9;padding:10px;border-radius:8px}
+.msg{padding:8px 10px;margin:6px 0;border-radius:8px}
+.user{background:#dcf8c6;text-align:right}
+.ai{background:#fff;border:1px solid #eee}
+input{width:78%;padding:12px;border-radius:8px;border:1px solid #ccc}
+button{padding:12px 14px;border:none;background:#0a4d2e;color:white;border-radius:8px;font-weight:bold}
+footer{text-align:center;padding:15px;font-size:13px;color:#666}
+</style>
+</head>
+<body>
+<header>
+<h1>KAZINGA CHANNEL FISHING VILLAGE</h1>
+<p>Formed in 1942 - Before Queen Elizabeth National Park</p>
+<p>Lake Edward | Bushenyi District, Uganda | 1,500 People</p>
+</header>
+<img class="hero" src="village.jpg" alt="Kazinga Channel Village with boats and elephant">
+<div class="box">
+<h2>Our Story - Darkness Is Not Negative</h2>
+<p>Our grandparents started fishing here on Lake Edward. They protected the animals and birds. They lived together with them because they knew this heritage would be important for our grandchildren.</p>
+<p>Today, Kazinga Channel is one of the best tourist attractions in Uganda. Tourism companies come every day, but our community gets nothing.</p>
+<p>We are <b>400 youth</b> who completed O-Level and A-Level. Our parents paid all school fees. Now there are no jobs, only fishing.</p>
+<p><b>We have the land. We have the heritage. We have the youth.</b> We are building a community-owned tourism site. Not charity. Partnership.</p>
+
+<div class="price">
+<h3>🐟 Community Experience</h3>
+<p><b>Boating + Smoking Fish Experience</b></p>
+<p style="font-size:28px;margin:5px"><b>40,000 UGX</b> per person</p>
+<p>Go with real fishermen, see elephants, hippos & birds, learn how we smoke fish, eat with our community.</p>
+</div>
+
+<a class="btn" href="https://wa.me/256755358436?text=Hello%20Bugimbi,%20I%20want%20to%20book%20the%20Kazinga%20Channel%20Boating%20Experience%20for%2040,000%20UGX">📱 BOOK ON WHATSAPP - 0755358436</a>
+<a class="btn btn2" href="https://www.linkedin.com/in/kinnawaahmed">View Our Story on LinkedIn</a>
+
+<div id="chat">
+<h3>🤖 Ask Our Community AI</h3>
+<p>Ask about price, boating, history, partnership, or location.</p>
+<div id="messages">
+<div class="msg ai">Hello! I am Kazinga AI. Ask me: Where is Kazinga? How much is boating? How can I partner?</div>
+</div>
+<div style="margin-top:10px">
+<input id="q" placeholder="Type your question... e.g. How much is boating?">
+<button onclick="ask()">Ask</button>
+</div>
+</div>
+
+<h3>What You Will See</h3>
+<ul>
+<li>✅ Elephants walking in the village</li>
+<li>✅ Hippos, Buffaloes & Birds on Lake Edward</li>
+<li>✅ Real fishermen & smoking fish</li>
+<li>✅ Village walk with our youth guides</li>
+</ul>
+
+<h3>Partnership - Not Charity</h3>
+<p>We have the land for a community tourism site. We need partners for training, guiding, and marketing. If you want to partner with 400 youth, WhatsApp us.</p>
+<p><b>Contact:</b> Kinnawa Ahmed (Bugimbi) - On behalf of Kazinga Channel Community</p>
+</div>
+<footer>© 2026 Kazinga Channel Fishing Village | Darkness Is Not Negative</footer>
+
+<script>
+function ask(){
+  var input=document.getElementById('q');
+  var text=input.value.toLowerCase();
+  if(!text) return;
+  var box=document.getElementById('messages');
+  box.innerHTML+='<div class="msg user">'+input.value+'</div>';
+  var reply="Thank you for asking. We are Kazinga Channel Fishing Village, formed in 1942 before Queen Elizabeth National Park. We have 1,500 people and 400 youth. Our Boating + Smoking Fish Experience is 40,000 UGX. WhatsApp Bugimbi on +256 755358436 to book or partner. Darkness Is Not Negative.";
+  if(text.includes('price')||text.includes('cost')||text.includes('much')||text.includes('40000')||text.includes('40,000')) reply="Our Community Boating + Smoking Fish Experience is 40,000 UGX per person. You go with real fishermen, see elephants and hippos, learn smoking fish, and eat with us. Book on WhatsApp +256 755358436.";
+  else if(text.includes('where')||text.includes('location')||text.includes('find')||text.includes('kazinga')) reply="We are in Kazinga Channel Fishing Village, on Lake Edward, Bushenyi District, Uganda, inside Queen Elizabeth National Park area. Our village was formed in 1942, before the park was created.";
+  else if(text.includes('history')||text.includes('1942')||text.includes('grand')) reply="Our village was formed in 1942. Our grandparents were the first fishermen here. They protected the animals and birds and lived together with them, because they knew this heritage would be important for our grandchildren.";
+  else if(text.includes('partner')||text.includes('invest')||text.includes('help')||text.includes('donate')) reply="We are not asking for charity. We are asking for partnership. We have the land for a community tourism site. We need partners to train our 400 youth as guides and to market us. WhatsApp Bugimbi on +256 755358436 to discuss partnership.";
+  else if(text.includes('boat')||text.includes('fish')||text.includes('smoking')||text.includes('tour')) reply="Our Boat Tour is 40,000 UGX. You ride with our fishermen on Lake Edward, see hippos, elephants, birds, then we show you how we smoke fish and you eat with the community. It is run by our youth.";
+  else if(text.includes('job')||text.includes('youth')||text.includes('400')) reply="We are 400 youth who finished O-Level and A-Level. Our parents paid all school fees. Now no jobs, only fishing. This tourism project creates jobs as guides, boat crew, cooks, and digital marketers for our youth.";
+  else if(text.includes('hello')||text.includes('hi')) reply="Hello! Welcome to Kazinga Channel. I am our Community AI. Ask me about price, boating, history, or partnership.";
+  box.innerHTML+='<div class="msg ai">'+reply+'</div>';
+  input.value='';
+  box.scrollTop=box.scrollHeight;
+}
+</script>
+</body>
+</html>
